@@ -1,19 +1,323 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <link href="./index.css" rel="stylesheet" />
   </head>
   <body>
-    <%- include('./layout/header'); -%>
-
-    <h1 class="index-title">我是首頁</h1>
-    <img src="../assets/images/cat.jpg" style="width: 300px;" alt="cat">
-
-    <%- include('./layout/footer'); -%>
-
-    <script type="module" src="../main.js"></script>
+    <!-- nav -->
+    <div class="nav">
+      <div class="container d-flex jcsb aic">
+        <img
+          class="logo-img"
+          src="../assets/images/logo-white.png"
+          alt="logo"
+        />
+        <ul class="nav-bar d-flex jcsb fz-20">
+          <li class="nav-link"><a href="#">系列鏡框</a></li>
+          <li class="nav-link"><a href="#">門市據點</a></li>
+          <li class="nav-link"><a href="#">部落格</a></li>
+          <li class="nav-link"><a href="#">常見問題</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- header -->
+    <header class="header">
+      <div class="container">
+        <p class="serice">Promise-Desert 2020 早春系列</p>
+        <h1 class="h1">看得清，才能看的遠</h1>
+        <button class="btn" href="#">立即購買</button>
+      </div>
+    </header>
+    <!-- service-section-->
+    <div class="service-section">
+      <div class="container">
+        <h2 class="service-title fz-h2">用專業的心，做專業的事</h2>
+        <ul class="card-list d-flex jcsb">
+          <li class="card mb-30">
+            <img
+              class="card-img"
+              src="../assets/images/home-section2-1.png"
+              alt="card-img"
+            />
+            <h3 class="card-title color-650300 fz-24">單一價格</h3>
+            <p class="service-content">
+              無論任何度數皆不需追加費用即可擁有適合自己的薄型球面鏡片。
+            </p>
+          </li>
+          <li class="card mb-30">
+            <img
+              class="card-img"
+              src="../assets/images/home-section2-2.png"
+              alt="card-img"
+            />
+            <h3 class="card-title color-650300">20 分鐘即可取件</h3>
+            <p class="service-content">
+              為了您的寶貴時間著想，以豐富專業知識與技術將結帳到交件的時間縮減至最快
+              20 分鐘即可完成。
+            </p>
+          </li>
+          <li class="card mb-30">
+            <img
+              class="card-img"
+              src="../assets/images/home-section2-3.png"
+              alt="card-img"
+            />
+            <h3 class="card-title color-650300">安心售後服務</h3>
+            <p class="service-content">
+              我們提供長達 120
+              天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。
+            </p>
+          </li>
+          <li class="card">
+            <img
+              class="card-img"
+              src="../assets/images/home-section2-4.png"
+              alt="card-img"
+            />
+            <h3 class="card-title color-650300">關於鏡片</h3>
+            <p class="service-content">
+              使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- classic-glasses -->
+    <div class="classic-glasses">
+      <div class="container">
+        <h2 class="classic-title fz-h2">經典系列鏡框</h2>
+        <ul class="classic-list d-flex jcsb">
+          <li class="classic-card">
+            <img
+              class="classic-img"
+              src="../assets/images/home-section3-1.png"
+              alt="optical-glasses"
+            />
+            <h3 class="glass-type">OPTICAL</h3>
+          </li>
+          <li class="classic-card">
+            <img
+              class="classic-img"
+              src="../assets/images/home-section3-2.png"
+              alt="sunglasses"
+            />
+            <h3 class="glass-type">SUNGLSSSES</h3>
+          </li>
+          <li class="classic-card">
+            <img
+              class="classic-img"
+              src="../assets/images/home-section3-3.png"
+              alt="functional"
+            />
+            <h3 class="glass-type">FUNCTIONAL</h3>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- designed-glasses -->
+    <div class="designed-glasses">
+      <div class="container">
+        <h2 class="designed-title fz-h2">聯名設計鏡框</h2>
+        <ul class="designed-list d-flex">
+          <li class="designed-card mb-24">
+            <div class="designed-img img1"></div>
+            <h3 class="designed-type">DOUBLE A+</h3>
+          </li>
+          <li class="designed-card">
+            <div class="designed-img img2"></div>
+            <h3 class="designed-type">YOUTH</h3>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- costumer-recommand -->
+    <div class="costumer-recommand">
+      <div class="container">
+        <h2 class="recommand-title fz-h2">顧客推薦</h2>
+        <ul class="blog-list d-flex jcsb">
+          <li class="blog mb-24 mb-16">
+            <img
+              src="../assets/images/home-section5-1.png"
+              alt="blog-img"
+              class="blog-img"
+            />
+            <div class="blog-content d-flex jcsb">
+              <div class="name-content">
+                <h3 class="name">Jessy</h3>
+                <p class="recommand-content">
+                  眼鏡品質優良，下次還會想來這邊購買！
+                </p>
+              </div>
+              <p class="date">2021/06/20</p>
+            </div>
+          </li>
+          <li class="blog mb-24 mb-16">
+            <img
+              src="../assets/images/home-section5-2.png"
+              alt="blog-img"
+              class="blog-img"
+            />
+            <div class="blog-content d-flex jcsb">
+              <div class="name-contetnt">
+                <h3 class="name">凱倫</h3>
+                <p class="recommand-content">
+                  做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！
+                </p>
+              </div>
+              <div class="date">2021/04/18</div>
+            </div>
+          </li>
+          <li class="blog mb-16">
+            <img
+              src="../assets/images/home-section5-3.png"
+              alt="blog-img"
+              class="blog-img"
+            />
+            <div class="blog-content d-flex jcsb">
+              <div class="name-content">
+                <h3 class="name">悠悠</h3>
+                <p class="recommand-content">
+                  謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！
+                </p>
+              </div>
+              <div class="date">2020/12/25</div>
+            </div>
+          </li>
+          <li class="blog">
+            <img
+              src="../assets/images/home-section5-4.png"
+              alt="blog-img"
+              class="blog-img"
+            />
+            <div class="blog-content d-flex jcsb">
+              <div class="name-content">
+                <h3 class="name">Kyuan</h3>
+                <p class="recommand-content">
+                  服務很好，品質沒有任何問題，非常喜歡。
+                </p>
+              </div>
+              <div class="date">2020/10/31</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- contact -->
+    <div class="contact">
+      <div class="container">
+        <h2 class="contact-title fz-h2">聯絡我們</h2>
+        <div class="content-input">
+          <p class="contact-content mb-24">
+            我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。
+          </p>
+          <div class="name-input mb-16">
+            <label class="name">姓名</label>
+            <input type="text" placeholder="陳小明" class="input-name input" />
+          </div>
+          <div class="phone-input mb-16">
+            <label class="phone">聯絡電話</label>
+            <input
+              type="text"
+              placeholder="0912-345-678"
+              class="input-phone input"
+            />
+          </div>
+          <div class="email-input mb-16">
+            <label class="email">電子郵件</label>
+            <input
+              type="text"
+              placeholder="example@email.com"
+              class="input-email input"
+            />
+          </div>
+          <div class="feedback-input mb-16">
+            <label class="feedback">意見反應</label>
+            <textarea
+              class="input-feedback input"
+              placeholder="請輸您的意見"
+              name="feedback"
+              id="feedback"
+            ></textarea>
+          </div>
+          <div class="checkbox-input mb-48">
+            <input type="checkbox" id="check" class="checkbox" /><label
+              for="check"
+              class="checkbox-label"
+              >我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label
+            >
+          </div>
+          <button class="contact-btn" href="#">確認送出</button>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="info d-flex jcsb">
+          <div class="info-contact-link">
+            <div class="info-link">
+              <ul class="link-list d-flex jcsb aic">
+                <li class="link"><a href="#">首頁</a></li>
+                <li class="link"><a href="#">系列鏡框</a></li>
+                <li class="link"><a href="#">門市據點</a></li>
+                <li class="link"><a href="#">部落格</a></li>
+                <li class="link"><a href="#">常見問題</a></li>
+              </ul>
+            </div>
+            <div class="info-contact">
+              <h4 class="h4">
+                <img
+                  class="info-icon"
+                  src="../assets/images/phone.png"
+                  alt="phone-icon"
+                />0800-000-000
+              </h4>
+              <h4 class="h4">
+                <img
+                  class="info-icon"
+                  src="../assets/images/email.png"
+                  alt="email-icon"
+                />glasses@business.com
+              </h4>
+            </div>
+          </div>
+          <div class="info-social d-flex jcsb">
+            <div class="info-img">
+              <img
+                src="../assets/images/ic-social-fb.png"
+                alt="fb-icon"
+                class="info-img"
+              />
+            </div>
+            <div class="info-img">
+              <img
+                src="../assets/images/ic_social_ig.png"
+                alt="ig-icon"
+                class="info-img"
+              />
+            </div>
+            <div class="info-img">
+              <img
+                src="../assets/images/ic_social_line.png"
+                alt="line-icon"
+                class="info-img"
+              />
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="copy d-flex jcsb">
+          <div class="copy-section mb-8">
+            <p>Copyright © 2020 Glasses.All rights reserved.</p>
+          </div>
+          <ul class="term-list d-flex jcsb">
+            <li class="term mb-8">隱私權政策</li>
+            <li class="term">服務條款</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
