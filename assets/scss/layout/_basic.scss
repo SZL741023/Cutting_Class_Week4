@@ -1,0 +1,20 @@
+/* basic setting */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: inherit;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+body {
+  font-family: "Noto Sans TC", Roboto;
+  line-height: 1.5;
+}
