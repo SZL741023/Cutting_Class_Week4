@@ -1,0 +1,24 @@
+.nav {
+  background-color: #aa0601;
+  color: #ffffff;
+  padding: 12px 0;
+}
+@media (max-width: 576px) {
+  .nav {
+    padding: 0;
+  }
+  .nav .container {
+    display: block;
+    padding: 0;
+  }
+  .nav-bar {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .nav-link {
+    padding: 12px 0;
+    text-align: center;
+    width: 50%;
+    border: 1px solid white;
+  }
+}

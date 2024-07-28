@@ -1,11 +1,7 @@
 @import "./pages/reset.scss";
 @import "./layout/basic.scss";
-@import "./layout/container";
-@import "./layout/header.scss";
-@import "./layout/footer.scss";
-
+@import "./layout/container.scss";
+@import "./layout/common.scss";
+@import "./layout/nav.scss";
 @import "./pages/index.scss";
-
-body {
-  background-color: black;
-}
+@import "./layout/footer.scss";
