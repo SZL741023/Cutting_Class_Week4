@@ -1,51 +1,47 @@
-.logo-img {
-  width: 80px;
-}
-@media (max-width: 576px) {
-  .logo-img {
-    margin: 12px 0;
-    margin-left: 15px;
-  }
-}
+/* component */
 .header {
   padding: 296px 0;
-  background-image: url(/assets/images/home-header.png);
+  background-image: url(../images/home-header.png);
   background-repeat: no-repeat;
   background-size: cover;
-  color: #650300;
+  color: $secondary;
   text-align-last: right;
-}
-@media (max-width: 992px) {
-  .header {
-    background-image: url(/assets/images/home-header-sm.png);
+  @include pad {
+    background-image: url(../images/home-header-sm.png);
+  }
+  .h1 {
+    font-size: 64px;
+    font-weight: bold;
+    @include mobile-large {
+      font-size: 24px;
+    }
+  }
+  .serice {
+    font-size: 36px;
+  }
+  .btn {
+    padding: 6px 12px;
+    background-color: $primary;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
   }
 }
-.header .h1 {
-  font-size: 64px;
-  font-weight: bold;
-}
-.header .serice {
-  font-size: 36px;
-}
-.header .btn {
-  padding: 6px 12px;
-  background-color: #aa0601;
-  color: #ffffff;
-  border: none;
-  cursor: pointer;
-}
-.contact .contact-btn {
-  display: block;
-  padding: 16px 0;
-  margin: 0 auto;
-  width: 416px;
-  color: #ffffff;
-  background-color: #aa0601;
-  border: none;
-  cursor: pointer;
-}
-.contact .contact-btn:hover {
-  background-color: #650300;
+
+.contact {
+  &-btn {
+    display: block;
+    padding: 16px 0;
+    margin: 0 auto;
+    width: 416px;
+    color: #ffffff;
+    background-color: $primary;
+    border: none;
+    cursor: pointer;
+  }
+  &-btn:hover {
+    background-color: $secondary;
+  }
 }
 @media (max-width: 576px) {
   .header .h1 {
@@ -63,11 +59,11 @@
 }
 .service-section {
   padding: 80px 0;
-  background-color: #fbf2f2;
+  background-color: $bg-light;
   text-align: center;
 }
 .service-section .service-title {
-  color: #650300;
+  color: $secondary;
   font-weight: bold;
   margin-bottom: 30px;
 }
@@ -89,6 +85,7 @@
   width: calc(25% - 18px);
 }
 .card-list .card .card-title {
+  color: $secondary;
   font-size: 24px;
   font-weight: bold;
 }
@@ -114,7 +111,7 @@
   text-align: center;
 }
 .classic-glasses .classic-title {
-  color: #650300;
+  color: $secondary;
   margin-bottom: 48px;
 }
 @media (max-width: 992px) {
@@ -140,7 +137,7 @@
   font-size: 48px;
   font-weight: bold;
   margin-top: 8px;
-  color: #aa0601;
+  color: $primary;
   font-style: italic;
 }
 @media (max-width: 992px) {
@@ -149,19 +146,19 @@
   }
 }
 .designed-glasses {
-  background-image: url(/assets/images/index-bg.png);
+  background-image: url(../images/index-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 80px 0;
 }
 @media (max-width: 992px) {
   .designed-glasses {
-    background-image: url(/assets/images/index-bg-md.png);
+    background-image: url(../images/index-bg-md.png);
   }
 }
 @media (max-width: 576px) {
   .designed-glasses {
-    background-image: url(/assets/images/index-bg-sm.png);
+    background-image: url(../images/index-bg-sm.png);
   }
 }
 .designed-glasses .designed-title {
@@ -198,17 +195,17 @@
   background-size: cover;
 }
 .designed-glasses .img1 {
-  background-image: url(/assets/images/home-section4-1.png);
+  background-image: url(../images/home-section4-1.png);
 }
 .designed-glasses .img2 {
-  background-image: url(/assets/images/home-section4-2.png);
+  background-image: url(../images/home-section4-2.png);
 }
 @media (max-width: 576px) {
   .designed-glasses .img1 {
-    background-image: url(/assets/images/home-section4-1-sm.png);
+    background-image: url(../images/home-section4-1-sm.png);
   }
   .designed-glasses .img2 {
-    background-image: url(/assets/images/home-section4-2-sm.png);
+    background-image: url(../images/home-section4-2-sm.png);
   }
 }
 .designed-glasses .designed-type {
@@ -216,7 +213,7 @@
   font-size: 48px;
   font-weight: bold;
   font-style: italic;
-  color: #aa0601;
+  color: $primary;
   text-align: center;
   padding: 8px 0;
 }
@@ -224,7 +221,7 @@
   padding: 80px 0;
 }
 .costumer-recommand .recommand-title {
-  color: #650300;
+  color: $secondary;
   text-align: center;
   margin-bottom: 48px;
 }
@@ -270,20 +267,20 @@
 }
 .contact {
   padding: 80px 0;
-  background-color: #fbf2f2;
+  background-color: $bg-light;
 }
 .contact-title {
   text-align: center;
-  color: #650300;
+  color: $secondary;
   margin-bottom: 48px;
 }
 .content-input {
-  width: 636px;
+  max-width: 636px;
   margin: 0 auto;
 }
 @media (max-width: 992px) {
   .content-input {
-    width: 576px;
+    max-width: 576px;
   }
 }
 @media (max-width: 576px) {
