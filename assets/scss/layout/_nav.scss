@@ -1,37 +1,38 @@
-.nav-bar {
-  width: 492px;
-}
 /* pages */
 .nav {
   background-color: $primary;
   color: #ffffff;
   padding: 12px 0;
-}
-@media (max-width: 576px) {
-  .nav {
+  @include mobile {
     padding: 0;
   }
-  .nav .container {
-    display: block;
-    padding: 0;
+  .container {
+    @include mobile {
+      display: block;
+      padding: 0;
+    }
   }
-  .nav-bar {
-    width: 100%;
-    flex-wrap: wrap;
+
+  &-bar {
+    width: 492px;
+    @include mobile {
+      width: 100%;
+      flex-wrap: wrap;
+    }
   }
-  .nav-link {
-    padding: 12px 0;
-    text-align: center;
-    width: 50%;
-    border: 1px solid white;
+  &-link {
+    @include mobile {
+      padding: 12px 0;
+      text-align: center;
+      width: 50%;
+      border: 1px solid white;
+    }
   }
-}
-.logo-img {
-  width: 80px;
-}
-@media (max-width: 576px) {
   .logo-img {
-    margin: 12px 0;
-    margin-left: 15px;
+    width: 80px;
+    @include mobile {
+      margin: 12px 0;
+      margin-left: 15px;
+    }
   }
 }

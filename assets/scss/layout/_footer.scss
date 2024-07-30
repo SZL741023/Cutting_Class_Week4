@@ -2,91 +2,72 @@
   padding: 48px 0;
   background-color: $primary;
   color: #ffffff;
-}
-@media (max-width: 992px) {
-  .footer {
+  @include pad {
     padding: 40px 0;
   }
-}
-.footer .info {
-  margin-bottom: 32px;
-}
-.footer .info-contact-link {
-  max-width: 464px;
-}
-.footer .link-list {
-  padding: 12px 0;
-  margin-bottom: 36px;
-}
-@media (max-width: 992px) {
-  .footer .link-list {
+  .info {
     margin-bottom: 32px;
+    &-contact-link {
+      max-width: 464px;
+    }
+    &-contact {
+      font-size: 36px;
+      @include mobile-large {
+        font-size: 16px;
+      }
+    }
+    &-icon {
+      width: 40px;
+      margin-right: 20px;
+      @include mobile {
+        width: 20px;
+        margin-right: 10px;
+      }
+    }
+    &-social {
+      width: 208px;
+      @include pad {
+        width: 152px;
+      }
+      @include mobile {
+        width: 88px;
+      }
+    }
+    &-img {
+      width: 48px;
+      @include pad {
+        width: 40px;
+      }
+      @include mobile {
+        width: 24px;
+      }
+    }
+  }
+  .link-list {
+    padding: 12px 0;
+    margin-bottom: 36px;
+    @include pad {
+      margin-bottom: 32px;
+    }
+    @include mobile-large {
+      display: none;
+    }
   }
 }
-.footer .info-contact {
-  font-size: 36px;
-}
-@media (max-width: 576px) {
-  .footer .info-contact {
-    font-size: 16px;
-  }
-}
-.footer .info-icon {
-  width: 40px;
-  margin-right: 20px;
-}
-@media (max-width: 576px) {
-  .footer .info-icon {
-    width: 20px;
-    margin-right: 10px;
-  }
-}
-.footer .info-social {
-  width: 208px;
-}
-@media (max-width: 992px) {
-  .footer .info-social {
-    width: 152px;
-  }
-}
-@media (max-width: 576px) {
-  .footer .info-social {
-    width: 88px;
-  }
-}
-.footer .info-img {
-  width: 48px;
-}
-@media (max-width: 992px) {
-  .footer .info-img {
-    width: 40px;
-  }
-}
-@media (max-width: 576px) {
-  .footer .link-list {
-    display: none;
-  }
-  .footer .info-img {
-    width: 24px;
-  }
-}
-
 .copy {
   margin-top: 32px;
-}
-@media (max-width: 576px) {
-  .copy {
+  @include mobile {
     flex-direction: column;
   }
-}
-.copy .term-list {
-  width: 174px;
-}
-@media (max-width: 576px) {
-  .copy .term-list {
-    flex-direction: column;
+  .term-list {
+    width: 174px;
+    @include mobile {
+      flex-direction: column;
+    }
   }
-  .copy .mb-8 {
-    margin-bottom: 8px;
+  .mb-8 {
+    @include mobile {
+      margin-bottom: 8px;
+    }
   }
 }
