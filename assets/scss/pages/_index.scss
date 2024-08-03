@@ -6,8 +6,13 @@
   background-size: cover;
   color: $secondary;
   text-align-last: right;
+  height: 787px;
+
   @include pad {
     background-image: url(../images/home-header-sm.png);
+  }
+  @include mobile {
+    height: 396px;
   }
   .h1 {
     font-size: 64px;
@@ -33,7 +38,6 @@
   }
   &-title {
     color: $secondary;
-    font-weight: bold;
     margin-bottom: 30px;
   }
   &-content {

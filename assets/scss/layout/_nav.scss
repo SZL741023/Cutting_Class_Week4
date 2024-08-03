@@ -14,9 +14,9 @@
   }
 
   &-bar {
-    width: 492px;
+    gap: 64px;
     @include mobile {
-      width: 100%;
+      gap: 0;
       flex-wrap: wrap;
     }
   }

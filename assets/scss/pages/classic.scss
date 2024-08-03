@@ -1,0 +1,109 @@
+.classic-style {
+  .container {
+    @include mobile {
+      padding: 0;
+    }
+  }
+  .classic-list {
+    max-width: 100%;
+    @include pad {
+      flex-direction: row;
+    }
+    .option {
+      padding: 24px 0;
+      text-align: center;
+      width: 33.333333%;
+      border: 1px solid #dcdcdc;
+      @include mobile {
+        padding: 16px 0;
+      }
+    }
+    .option:hover {
+      border-bottom: 8px solid $primary;
+    }
+  }
+}
+.classic-img {
+  margin-bottom: 80px;
+  .img {
+    width: 50vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 296px;
+    @include mobile {
+      height: 136px;
+    }
+  }
+  .img1 {
+    background-image: url(../images/product-header-1.png);
+    @include pad {
+      background-image: url(../images/product-header-sm-1.png);
+    }
+  }
+  .img2 {
+    background-image: url(../images/product-header-2.png);
+    @include pad {
+      background-image: url(../images/product-header-sm-2.png);
+    }
+  }
+}
+.glasses-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  .title-en {
+    font-size: 2.625rem;
+    @include mobile {
+      font-size: 1.5rem;
+    }
+  }
+  .title-zh {
+    font-size: 2rem;
+    @include mobile {
+      font-size: 1.5rem;
+    }
+  }
+}
+.glasses-cards {
+  .card {
+    margin-bottom: 80px;
+  }
+  .box {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+  }
+  .box1 {
+    background-color: #5f3e2d;
+  }
+  .box2 {
+    background-color: #b75929;
+  }
+  .mr-8 {
+    margin-right: 0.5rem;
+  }
+}
+.pages {
+  display: block;
+  margin-bottom: 80px;
+  text-align: center;
+  .page {
+    border: 1px solid #555555;
+    // border-collapse: collapse;
+    display: block;
+    height: 48px;
+  }
+  .page:hover {
+    background-color: #000000;
+    color: white;
+  }
+  .pre-page,
+  .next-page {
+    padding: 11px 12px;
+  }
+  .next-page {
+    background-color: #f2f2f2;
+  }
+  .number-page {
+    padding: 12px 16px;
+  }
+}

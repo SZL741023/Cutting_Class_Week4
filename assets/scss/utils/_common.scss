@@ -1,8 +1,19 @@
 .d-flex {
   display: flex;
 }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -12px;
+}
 .jcsb {
   justify-content: space-between;
+}
+.jcsa {
+  justify-content: space-around;
+}
+.jcc {
+  justify-content: center;
 }
 .aic {
   align-items: center;
@@ -11,6 +22,38 @@
   text-align: center;
 }
 .fz-h2 {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: bold;
+  @include mobile {
+    font-size: 1.5rem;
+  }
+}
+.fz-h3 {
+  font-size: 2rem;
+  @include pad {
+    font-size: 1.5rem;
+  }
+  @include mobile {
+    font-size: 1rem;
+  }
+}
+.fz-24 {
+  font-size: 1.5rem;
+}
+[class*="col-"] {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.col-3 {
+  width: 25%;
+}
+.col-lg-6 {
+  @include pad {
+    width: 50%;
+  }
+}
+.col-sm-12 {
+  @include mobile {
+    width: 100%;
+  }
 }

@@ -73,7 +73,7 @@
     <!-- classic-glasses -->
     <div class="classic">
       <div class="container">
-        <h2 class="classic-title fz-h2">經典系列鏡框</h2>
+        <h2 class="classic-title fz-h2"><a href="./classicGlasses.html">經典系列鏡框</h2></a>
         <ul class="classic-list d-flex jcsb">
           <li class="classic-card">
             <img
@@ -119,8 +119,6 @@
       </div>
     </div>
     <!-- costumer-recommand -->
-    <div class="costumer-recommand">
-      <div class="container">
         <h2 class="recommand-title fz-h2">顧客推薦</h2>
         <ul class="blog-list d-flex jcsb">
           <li class="blog mb-24 mb-16">
@@ -152,7 +150,7 @@
                   做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！
                 </p>
               </div>
-              <div class="date">2021/04/18</div>
+              <time class="date">2021/04/18</time>
             </div>
           </li>
           <li class="blog mb-16">
@@ -168,7 +166,7 @@
                   謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！
                 </p>
               </div>
-              <div class="date">2020/12/25</div>
+              <time class="date">2020/12/25</time>
             </div>
           </li>
           <li class="blog">
@@ -184,7 +182,7 @@
                   服務很好，品質沒有任何問題，非常喜歡。
                 </p>
               </div>
-              <div class="date">2020/10/31</div>
+              <time class="date">2020/10/31</time>
             </div>
           </li>
         </ul>
@@ -198,43 +196,48 @@
           <p class="contact-content mb-24">
             我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。
           </p>
-          <div class="name-input mb-16">
-            <label class="name">姓名</label>
-            <input type="text" placeholder="陳小明" class="input-name input" />
-          </div>
-          <div class="phone-input mb-16">
-            <label class="phone">聯絡電話</label>
-            <input
-              type="text"
-              placeholder="0912-345-678"
-              class="input-phone input"
-            />
-          </div>
-          <div class="email-input mb-16">
-            <label class="email">電子郵件</label>
-            <input
-              type="text"
-              placeholder="example@email.com"
-              class="input-email input"
-            />
-          </div>
-          <div class="feedback-input mb-16">
-            <label class="feedback">意見反應</label>
-            <textarea
-              class="input-feedback input"
-              placeholder="請輸您的意見"
-              name="feedback"
-              id="feedback"
-            ></textarea>
-          </div>
-          <div class="checkbox-input mb-48">
-            <input type="checkbox" id="check" class="checkbox" /><label
-              for="check"
-              class="checkbox-label"
-              >我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label
-            >
-          </div>
-          <button class="contact-btn" href="#">確認送出</button>
+          <form action="">
+            <div class="name-input mb-16">
+              <label for="name" class="name">姓名</label>
+              <input id="name" type="text" placeholder="陳小明" class="input-name input" />
+            </div>
+            <div class="phone-input mb-16">
+              <label for="phone" class="phone">聯絡電話</label>
+              <input
+                id="phone"
+                type="text"
+                placeholder="0912-345-678"
+                class="input-phone input"
+              />
+            </div>
+            <div class="email-input mb-16">
+              <label for="email" class="email">電子郵件</label>
+              <input
+                id="email"
+                type="text"
+                placeholder="example@email.com"
+                class="input-email input"
+              />
+            </div>
+            <div class="feedback-input mb-16">
+              <label for="feedback" class="feedback">意見反應</label>
+              <textarea
+                id="feedback"
+                class="input-feedback input"
+                placeholder="請輸您的意見"
+                name="feedback"
+                id="feedback"
+              ></textarea>
+            </div>
+            <div class="checkbox-input mb-48">
+              <input type="checkbox" id="check" class="checkbox" /><label
+                for="check"
+                class="checkbox-label"
+                >我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label
+              >
+            </div>
+            <button class="contact-btn" href="#">確認送出</button>
+          </form>
         </div>
       </div>
     </div>
