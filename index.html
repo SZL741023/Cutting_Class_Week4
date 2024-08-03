@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title></title>
-    <script type="module" crossorigin src="/Cutting_Class_Week4/assets/main-d2af31bf.js"></script>
-    <link rel="stylesheet" href="/Cutting_Class_Week4/assets/main-35555ffb.css">
+    <script type="module" crossorigin src="/Cutting_Class_Week4/assets/main-859145e8.js"></script>
+    <link rel="stylesheet" href="/Cutting_Class_Week4/assets/main-8d9f2af6.css">
   </head>
   <body>
     <!-- nav -->
@@ -89,7 +89,7 @@
     <!-- classic-glasses -->
     <div class="classic">
       <div class="container">
-        <h2 class="classic-title fz-h2">經典系列鏡框</h2>
+        <h2 class="classic-title fz-h2"><a href="./classicGlasses.html">經典系列鏡框</h2></a>
         <ul class="classic-list d-flex jcsb">
           <li class="classic-card">
             <img
@@ -135,8 +135,6 @@
       </div>
     </div>
     <!-- costumer-recommand -->
-    <div class="costumer-recommand">
-      <div class="container">
         <h2 class="recommand-title fz-h2">顧客推薦</h2>
         <ul class="blog-list d-flex jcsb">
           <li class="blog mb-24 mb-16">
@@ -168,7 +166,7 @@
                   做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！
                 </p>
               </div>
-              <div class="date">2021/04/18</div>
+              <time class="date">2021/04/18</time>
             </div>
           </li>
           <li class="blog mb-16">
@@ -184,7 +182,7 @@
                   謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！
                 </p>
               </div>
-              <div class="date">2020/12/25</div>
+              <time class="date">2020/12/25</time>
             </div>
           </li>
           <li class="blog">
@@ -200,7 +198,7 @@
                   服務很好，品質沒有任何問題，非常喜歡。
                 </p>
               </div>
-              <div class="date">2020/10/31</div>
+              <time class="date">2020/10/31</time>
             </div>
           </li>
         </ul>
@@ -214,43 +212,48 @@
           <p class="contact-content mb-24">
             我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。
           </p>
-          <div class="name-input mb-16">
-            <label class="name">姓名</label>
-            <input type="text" placeholder="陳小明" class="input-name input" />
-          </div>
-          <div class="phone-input mb-16">
-            <label class="phone">聯絡電話</label>
-            <input
-              type="text"
-              placeholder="0912-345-678"
-              class="input-phone input"
-            />
-          </div>
-          <div class="email-input mb-16">
-            <label class="email">電子郵件</label>
-            <input
-              type="text"
-              placeholder="example@email.com"
-              class="input-email input"
-            />
-          </div>
-          <div class="feedback-input mb-16">
-            <label class="feedback">意見反應</label>
-            <textarea
-              class="input-feedback input"
-              placeholder="請輸您的意見"
-              name="feedback"
-              id="feedback"
-            ></textarea>
-          </div>
-          <div class="checkbox-input mb-48">
-            <input type="checkbox" id="check" class="checkbox" /><label
-              for="check"
-              class="checkbox-label"
-              >我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label
-            >
-          </div>
-          <button class="contact-btn" href="#">確認送出</button>
+          <form action="">
+            <div class="name-input mb-16">
+              <label for="name" class="name">姓名</label>
+              <input id="name" type="text" placeholder="陳小明" class="input-name input" />
+            </div>
+            <div class="phone-input mb-16">
+              <label for="phone" class="phone">聯絡電話</label>
+              <input
+                id="phone"
+                type="text"
+                placeholder="0912-345-678"
+                class="input-phone input"
+              />
+            </div>
+            <div class="email-input mb-16">
+              <label for="email" class="email">電子郵件</label>
+              <input
+                id="email"
+                type="text"
+                placeholder="example@email.com"
+                class="input-email input"
+              />
+            </div>
+            <div class="feedback-input mb-16">
+              <label for="feedback" class="feedback">意見反應</label>
+              <textarea
+                id="feedback"
+                class="input-feedback input"
+                placeholder="請輸您的意見"
+                name="feedback"
+                id="feedback"
+              ></textarea>
+            </div>
+            <div class="checkbox-input mb-48">
+              <input type="checkbox" id="check" class="checkbox" /><label
+                for="check"
+                class="checkbox-label"
+                >我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label
+              >
+            </div>
+            <button class="contact-btn" href="#">確認送出</button>
+          </form>
         </div>
       </div>
     </div>
@@ -274,14 +277,14 @@
               class="info-icon"
               src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAABB9JREFUeF7tnW1S2zAQhuX0BmWgcJrCyQonI5wGCkOPEHVkxcEB2/uhldZmN78YYmut99F+SLKdLvhHVYFO1bobDw5AeRA4AAegrICyefcAB6CsgLJ59wAHoKyAsnn3AAegrICyefeArQJ4ef33mK893pb2IcbwEHaH/c3l5b60ra2dz/KAl9f3WKOjsTvcWYNABvD89/2+68KfGgBC6PbXVz/v6rS9zlbJAGqN/kEea17gAJQdY3UArIUhBoBU/ZRXPvMDz1YeWCGAEK6vLsjXpRxJ2ObJHc31/7wHYJIolMgxbbB7vLITlQCUQ1yZjuzLkQcQw8PNr4v7pSuC5xJ28gAZgIR4z29vt13cHZcyplA5gNkBLCEe3IadREz3AHD04sTzRJzHOBlAOklCPIlqip35VnQiE0B5FQMCQCTzFenIvpQqADDLCRLJnN3rFZ3IAiCRRB1AQQ7AAFiazcLi9+nJxN4AywNyIoYW5aYFxInvAMAoCQP4Wo7ixQ8h7RNDM2rwIjdwANsDqGHIxZ8eDWwAmPnAEMcp4luJ/QOOQgBQHsihBL+JbyPxjn2hCAAmDOHDsD3x2UsRY1ExyRiGYFN8EQC0+G576Xmy9/DoXD6iLAzZHfkiSXhohBeGXHyREJQaoXuBiy/qAbiliZNJE2s82NBeVIaOjWC9wNI9PxgIYgCwXmBljQcjvlgOGIxhvcDSjVcQCFEPwHqBtfWeJQjiANBeYGS5ubkH9GUp8ikaD0XM21Igqh6KMArlY8RDEDkhGw9F1QDgvcDO9mOVxTjI2aC76IbzreaDqh5AXSeyCKE6AEpVlI61BqEJAEo+sDZJawbAIUxny6YAsLPkY4Vcfdk6X8+P42sX8oOH/YtD0qfRy0OaAqDmg1rh6EN43PPONaE0B0CHIJuYaV44X2RLQVEBwIIgMGOWEv8zlpI9DjUArSHUEn8Mg1NCqwJoBaGF+NzCQR1AbQjtxM8IqHveqwDAgTCUjEvPELQWf9MApCFQxU/xux/Ch10/H8Df0X2ekjfrAUM3sLtpS5UIR/y5lwWmtihQNg+A6wmnWezusF9+D8U5OmrlAi2vfwsAPQTEKxHmp0m4b6jip1bNACgNSRACjvgmAZSEpDkIXPHNApCEUCK+aQCSIWlYSOM8h2wuB0yFEW6pOtUWFYYDGKkoCeJUxqY/FjZjHMDEMJYGcW6i28cYn/r/IeYY32YeAJWRn79PEEqWEKj25o43C2CcpDVBmAegDcIBNM8R5wYdwEIwb5EnHAAym9aAwdmcX82OGFK3aod9AOl+c38fgTr6+2KhWo823vB4IyZXVQnM8Bnf0NX1P73F/fEhB6A8UByAA1BWQNm8e4ADUFZA2bx7gANQVkDZvHuAA1BWQNm8e4ADUFZA2bx7gDKA/4BttH8bOYyrAAAAAElFTkSuQmCC"
               alt="phone-icon"
-            />0800-000-000
+            /><a href="tel:+886-0800-000-000">0800-000-000</a>
           </h4>
           <h4 class="h4">
             <img
               class="info-icon"
               src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAA1FJREFUeF7tnGFS3DAMhePtDcpA4TQsJwNORnoaKAy9QdedkMk0ncnYkmL72c7jL8lKfp+elGSzdgP/oAo4aHQGHwgAXAQEQABgBcDh6QACACsADk8HEABYAXB4OoAAwAqAw9MBBABWAByeDiAAsALg8HRAawBePz7Ow+V0ds7dD4M/g/OvJLwbvfc/735cPWkTUjng9dfnk3PDozbIkY73fnjWgBADoPjyMtJAEAGg+HLxlyOlEEQA3t4/vT4FnuHd5eHu+noMKREFwOq3F5LEBVEAb++/X3i1Y4Xgxtub7w+7HMD2YxV/Pu/25ipY5AIHhPu/xGb7llDn2dP9kPPfHmPdITsA7dSvU05dVpq5WAzAvAQ3evfnOTb5dcut52hp1a8zLgxgDt1jW9JUPRxAT23JUvXVAGjZDXuFXyBAWtBW126pLVnbzda6qwHQwpBOVfVFW9BU2dpH1DW6QV/18xWf86eX0HVadgcsAfQLqONqyVL16wKKPSkoBmCqgr2LKXnFb8l16z6nKgCLgLW7IWV+VQKwg8h7J52q6tdOrRrAV1syfI+cY0jr85AVQ/UA7G5IM6QtVa8pgGYAlB7SFuEtDxObAlDKDfp2Y3dbkwDsIMJ9uVTVNzWEY9f2qapV/zmyIRvLv2kHrBenF3BuG8PpMkq+GlzH0gzZwwCwDumYQP//P03Vd9WCtgS0uCEGImXVdw/APqS3MKSv+sMAsN5Jl/zuoZshHGshmraUq91s5XgYALIhnbfdHB5AaDaUrPpDzYBQa5rbkrtHvgx2qBYUmxOI/xMAQvVVTAIggPD772B9soenA7JLHA5AAATAFhSqgaIvZoGLERKeLQgi+7+gBEAAnAGcAUAXsAUBxZ9CEwABcAZwBgBdwBYEFJ8zACw+ARBAfD+cCjTKmgJ8BmRdXQcfnuBpKLcss9dBgi3LNG+k2RPt80zJu0rRLcvmX52Ef47fp3z7VxVrP1OEKIDpILpAD0NS/WIAhKADIBVfBYAQZBA04qsBLCks72TGtmyUpdzDUfP29dPv1bQbFopmQA8S1boGAgCTIQACACsADk8HEABYAXB4OoAAwAqAw9MBBABWAByeDiAAsALg8HQAAYAVAIenAwgArAA4/F84jRCOH/gZHgAAAABJRU5ErkJggg=="
               alt="email-icon"
-            />glasses@business.com
+            /><a href="mailto:glasses@business.com">glasses@business.com</a>
           </h4>
         </div>
       </div>
@@ -315,8 +318,8 @@
         <p>Copyright © 2020 Glasses.All rights reserved.</p>
       </div>
       <ul class="term-list d-flex jcsb">
-        <li class="term mb-8">隱私權政策</li>
-        <li class="term">服務條款</li>
+        <li class="term mb-8"><a href="#">隱私權政策</a></li>
+        <li class="term"><a href="#">服務條款</a></li>
       </ul>
     </div>
   </div>
