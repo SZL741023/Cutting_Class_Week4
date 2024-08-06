@@ -16,3 +16,7 @@
     @content;
   }
 }
+@mixin linkHover {
+  transform: translate(0, -5px);
+  transition: 0.5s;
+}

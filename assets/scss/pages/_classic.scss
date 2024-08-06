@@ -14,7 +14,10 @@
       text-align: center;
       width: 33.333333%;
       border: 1px solid #dcdcdc;
-      @include mobile {
+      &:hover {
+        border-bottom: 8xp solid $primary;
+      }
+      @include pad {
         padding: 16px 0;
       }
     }
@@ -66,6 +69,16 @@
 .glasses-cards {
   .card {
     margin-bottom: 80px;
+    @include pad {
+      &:nth-last-child(-n + 2) {
+        display: none;
+      }
+    }
+    @include mobile {
+      &:nth-last-child(-n + 7) {
+        display: none;
+      }
+    }
   }
   .box {
     width: 24px;
